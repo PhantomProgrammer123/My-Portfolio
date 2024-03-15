@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@400;500&family=Press+Start+2P&display=swap');
+
+*{
+    font-family: Poppins, sans-serif;
+}
+
+#mainbody{
+    animation-duration: 0.75s;
+    animation-name: slideIn;
+}
+
+@keyframes slideIn{
+    from{
+        margin-top: 100%;
+    }
+    to{
+        margin-bottom: 0%;
+    }
+}
+
+#like:focus{
+    background-color: rgb(226, 55, 55);
+    color: black;
+}
+
+#img{
+    overflow: hidden;
+    transition: all ease 1s;
+}
+
+
+#img:hover{
+    scale: 1.05;
+}
+
+.tr {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.tr span {
+    color: #BD53ED;
+    position: relative;
+}
+
+.tr span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: #BD53ED;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+.tr span.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    50% { opacity: 0 }
+}
+
+.try1{
+    object-fit: cover;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    50%{
+        transform: translateY(60px);
+    }
+}
+
+#sbd::-webkit-scrollbar{
+  width: 1.75em;
+}
+#sbd::-webkit-scrollbar-track{
+  background: #1a202c;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+#sbd::-webkit-scrollbar-thumb{
+  background: rgb(173, 169, 169);
+  border: 0.5em solid #1a202c;
+  border-radius: 100vw;
+}
+#sbd::-webkit-scrollbar-thumb:hover{
+  background: rgb(136, 133, 133);
+}
+
+#sbl::-webkit-scrollbar{
+    width: 1.75em;
+}
+
+#sbl::-webkit-scrollbar-track{
+    background: #ffffff;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+
+#sbl::-webkit-scrollbar-thumb{
+    background: rgb(173, 169, 169);
+    border: 0.5em solid #ffffff;
+    border-radius: 100vw;
+}
+
+#sbl::-webkit-scrollbar-thumb:hover{
+    background: rgb(136, 133, 133);
+}
+
+#btn1234{
+    position: relative;
+    overflow: hidden;
+}
+
+#btn1234::before{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    background: #4070f4;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+#btn1234:hover::before{
+    width: 120px;
+    height: 120px;
+}
+
+#btn1234:hover{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.onet{
+    position: relative;
+    z-index: 1;
+}
+
+#btn123{
+    position: relative;
+    overflow: hidden;
+}
+
+#btn123::before{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    background: #4070f4;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+#btn123:hover::before{
+    width: 120px;
+    height: 120px;
+}
+
+#btn123:hover{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.onet{
+    position: relative;
+    z-index: 1;
+}
+
+.lol{
+    position: relative;
+}
+
+.lol::after{
+    content: "";
+    position: absolute;
+    background-color: #04d9ff;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    border-radius: 10px;
+    bottom: -2px;
+    transition: 0.3s;
+}
+
+.lol:hover::after{
+    width: 100%;
+}
+
+/*CURSOR MOVE ANIMATION*/
+
+/* .trail{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ff0062;
+    background: #ff0062;
+    position: fixed;
+    animation: come 1s linear forwards;
+}
+
+@keyframes come {
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0) translateY(50px);
+        opacity: 0;
+    }
+} */
+
+/*END*/
+
+@media (max-width: 1024px) {
+    #hijk{
+        margin-right: 2px;
+    }
+}
+
